@@ -1,0 +1,166 @@
+/* All Thew custom CSS Here */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+body{
+    font-family: Poppins;
+}
+
+a{
+    text-decoration: none!important;
+}
+
+/* Topbar  */
+.topbar-wrapper {
+    border-bottom: 1px solid #d9d9d9;
+    padding: 15px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.topbar-wrapper ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    float: right;
+}
+
+.topbar-wrapper p {
+    margin: 0px;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.topbar-wrapper span {
+    background: #000000;
+    padding: 3px 15px;
+    color: #fff;
+    margin-right: 10px;
+}
+
+
+.topbar-wrapper ul.user-action-links li {
+    display: inline-block;
+    padding: 0px 5px;
+}
+
+.header-wrapper ul.header-menu {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+.header-wrapper img {
+    max-width: 235px;
+}
+
+.header-wrapper {
+    margin-top: 10px;
+}
+
+ul.header-menu {
+    display: flex;
+    line-height: 55px;
+}
+
+ul.header-menu li {
+    padding: 0px 10px;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+ul.header-menu li:first-child {
+    margin: 0px;
+}
+
+ul.header-menu li a {
+    color: #222;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+button.sign-up {
+    float: right;
+    background: none;
+    color: #0069ff;
+    font-size: 14px;
+    padding: 10px 40px;
+    margin-right: 12px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.header-wrapper {
+    padding-bottom: 10px;
+    box-shadow: -7px 9px 10px #d9d9d936;
+}
+
+ul.user-action-links li a {
+    color: #222;
+    font-size: 13px;
+}
+
+.hero-bg {
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+}
+
+.hero-table {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
+.left-content h3 {
+    font-size: 60px;
+    color: #fff;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.left-content p {
+    font-size: 21px;
+    color: #ffffffa8;
+}
+
+
+.hero-form-wrapper {
+    background: #fff;
+    border-radius: 10px;
+    padding: 50px;
+    max-width: 435px;
+    float: right;
+}
+
+.hero-form-wrapper h3 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #031b4e;
+}
+
+.hero-form-wrapper input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 14px;
+    font-size: 14px;
+}
+
+.hero-form-wrapper button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 0;
+    font-size: 14px;
+}
+
+.topbar-wrapper p strong {
+    color: #0069ff;
+    text-decoration: underline;
+}
