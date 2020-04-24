@@ -50,7 +50,7 @@ a{
 }
 
 .header-wrapper img {
-    max-width: 235px;
+    max-width: 195px;
 }
 
 .header-wrapper {
@@ -66,6 +66,7 @@ ul.header-menu li {
     padding: 0px 10px;
     margin-left: 20px;
     margin-top: 5px;
+    padding-bottom: 10px;
 }
 
 ul.header-menu li:first-child {
@@ -90,7 +91,6 @@ button.sign-up {
 }
 
 .header-wrapper {
-    padding-bottom: 10px;
     box-shadow: -7px 9px 10px #d9d9d936;
 }
 
@@ -102,7 +102,8 @@ ul.user-action-links li a {
 .hero-bg {
     background-position: center;
     background-size: cover;
-    height: 500px;
+    min-height: 500px;
+    padding: 65px;
 }
 
 .hero-table {
@@ -164,3 +165,106 @@ ul.user-action-links li a {
     color: #0069ff;
     text-decoration: underline;
 }
+
+
+.other-options {
+    margin-top: 15px;
+    position: relative;
+    text-align: center;
+}
+
+.other-options h4 {
+    font-size: 14px;
+}
+
+.other-options button {
+    width: 49%;
+    display: inline-grid;
+    background: #f2f8ff;
+    margin-top: 10px;
+    color: #222;
+}
+
+.other-options h4::before {
+    width: 30%;
+    height: 2px;
+    background: #2222221f;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 8px;
+}
+
+.other-options h4::after{
+    width: 30%;
+    height: 2px;
+    background: #2222221f;
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 8px;
+}
+
+ul.header-menu li a:hover {
+    color: #0062cc;
+    border-bottom: 2px solid #0062cc;
+}
+
+ul.mega-menu:hover ul.header-menu li{
+color:#0062cc;
+border-bottom:2px solid #0062cc;
+}
+/* end Custom Hover State */
+
+
+button.play-btn {
+    padding: 20px 25px;
+    border-radius: 100%;
+    background: none;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+button.play-btn:hover {
+    background: #fff;
+    color: #222;
+    transition: all .3s ease-in;
+}
+
+
+.left-content span {
+    color: #fff;
+    margin-left: 15px;
+    font-weight: 600;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+
+ul.header-menu li {
+    position: relative;
+}
+
+
+.header-menu li:hover ul {
+    visibility: visible;
+    top: 100%;
+    opacity: 1;
+    transition: all .3s ease-in;
+}
+
+/* Mega Menu  */
+ul.mega-menu {
+    position: absolute;
+}
+
+/* End Mega Menu */
+
+/*
+==================================================================
+End Header 
+==================================================================
+*/
+
+/* Start Footer */
+
+/* End Footer */

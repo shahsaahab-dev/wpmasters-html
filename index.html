@@ -7,6 +7,8 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/plugins.css">
+    <!-- Font Awesome Imported -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
     <!-- End Custom CSS -->
 </head>
@@ -36,8 +38,13 @@
                 <div class="col-xl-10">
                    <ul class="header-menu">
                        <li> <a href="#"><img src="img/logo.png" alt="WpMasters"></a></li>
-                       <li><a href="#">Products</a></li>
-                       <li><a href="#">MarketPlace</a></li>
+                       <li><a href="#">Products</a>
+                            <ul class="mega-menu">
+                               
+                            </ul>
+                    </li>
+                       <li><a href="#">MarketPlace</a>
+                        </li>
                        <li><a href="#">Customers</a></li>
                        <li><a href="#">Partners</a></li>
                        <li><a href="#">Community</a></li>
@@ -45,7 +52,7 @@
                    </ul>
                 </div>
                 <div class="col-xl-2">
-                    <button class="btn btn-primary sign-up">Sign Up</button>
+                    <button class="btn btn-primary sign-up" data-toggle="modal" data-target="#exampleModalCenter">Sign Up</button>
                 </div>
             </div>
         </div>
@@ -64,6 +71,8 @@
                                 <div class="left-content">
                                     <h3>Welcome to the developer cloud</h3>
                                     <p>We make it simple to launch in the cloud and scale up as you grow - with an intuitive control panel, predictable pricing, team accounts,and more.</p>
+                                    <button class="play-btn"><i class="fa fa-play"></i></button><span>Watch us in Action!</span>
+
                                 </div>
                             </div>
                             <div class="col-lg-6">
@@ -75,8 +84,8 @@
                                     <button class="btn btn-primary">Create your Account</button>
                                     <div class="other-options">
                                         <h4>or signup using</h4>
-                                        <button class="btn btn-primary">Google</button>
-                                        <button class="btn btn-primary">Github</button>
+                                        <button class="btn btn-primary">Facebook</button>
+                                        <button class="btn btn-primary">Twitter</button>
                                     </div>
                                 </div>
                             </div>
@@ -87,9 +96,33 @@
         </div>
     </div>
     <!-- End Slider -->
+
+
+    <!-- Widgets and Popup Elements -->
+    <!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- Widgets and Popup Elements -->
     <!-- Custom JS -->
     <script src="js/plugins.js"></script>
-    <script src="js/main.js.js"></script>
+    <script src="js/main.js"></script>
     <!-- End Custom JS -->
 </body>
 </html>
