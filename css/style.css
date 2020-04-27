@@ -1,12 +1,12 @@
 /* All Thew custom CSS Here */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
 
-body{
+body {
     font-family: Poppins;
 }
 
-a{
-    text-decoration: none!important;
+a {
+    text-decoration: none !important;
 }
 
 /* Topbar  */
@@ -163,6 +163,7 @@ ul.user-action-links li a {
     font-size: 14px;
 }
 
+
 .topbar-wrapper p strong {
     color: #0069ff;
     text-decoration: underline;
@@ -180,11 +181,12 @@ ul.user-action-links li a {
 }
 
 .other-options button {
-    width: 49%;
-    display: inline-grid;
-    background: #f2f8ff;
+    width: 32%;
     margin-top: 10px;
-    color: #222;
+    color: #fff;
+    border: none;
+    font-size: 12px;
+    display: inline-block;
 }
 
 .other-options h4::before {
@@ -197,7 +199,7 @@ ul.user-action-links li a {
     top: 8px;
 }
 
-.other-options h4::after{
+.other-options h4::after {
     width: 30%;
     height: 2px;
     background: #2222221f;
@@ -207,15 +209,21 @@ ul.user-action-links li a {
     top: 8px;
 }
 
+.other-options button i.fa {
+    margin-right: 10px;
+}
+
+
 ul.header-menu li a:hover {
     color: #0062cc;
     border-bottom: 2px solid #0062cc;
 }
 
-ul.mega-menu:hover ul.header-menu li{
-color:#0062cc;
-border-bottom:2px solid #0062cc;
+ul.mega-menu:hover ul.header-menu li {
+    color: #0062cc;
+    border-bottom: 2px solid #0062cc;
 }
+
 /* end Custom Hover State */
 
 
@@ -246,6 +254,10 @@ ul.header-menu li {
     position: relative;
 }
 
+ul.header-menu li:first-child a {
+    border: none;
+}
+
 
 .header-menu li:hover ul {
     visibility: visible;
@@ -259,6 +271,12 @@ ul.mega-menu {
     position: absolute;
 }
 
+.hero-form-wrapper p {
+    font-size: 13px;
+    margin-top: 15px;
+    font-weight: 500;
+}
+
 /* End Mega Menu */
 
 /*
@@ -267,6 +285,116 @@ End Header
 ==================================================================
 */
 
-/* Start Footer */
+/* Partners logo */
+.partners-wrapper {
+    padding-bottom: 35px;
+}
+
+.image {
+    width: 150px;
+    height: 120px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.partners-wrapper h4 {
+    font-size: 16px;
+    color: #2222226b;
+    margin-top: 45px;
+    font-weight: 600;
+}
+
+.partners-wrapper a {
+    font-weight: 600;
+}
+
+.logo-carousel {
+    margin-bottom: 15px;
+}
+
+a.animated-arrow i.fa {
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s ease-in;
+}
+
+a.animated-arrow:hover i.fa {
+    visibility: visible;
+    opacity: 1;
+    transition: all .3s ease-in;
+    padding-left: 10px;
+}
+
+
+/*  Footer  */
+.footer-wrapper {
+    padding: 80px 0 0 0;
+
+}
+
+ul.footer-menu {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.footer-wrapper h4 {
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+ul.footer-menu li a {
+    font-size: 14px;
+    color: #fff5;
+    font-weight: 500;
+}
+
+ul.footer-menu li a:hover {
+    color: #4d96ff;
+    transition: all .3s ease-in;
+}
+
+.top-border {
+    border-top: 1px solid #fff4;
+    margin-top: 20px;
+    padding: 30px 0px 10px 0px;
+    color: #ffffffcf;
+}
+
+.top-border p strong {
+    color: #0069ff;
+}
+
+.top-border p {
+    font-size: 14px;
+}
+
+ul.social-icons {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    float: right;
+}
+
+ul.social-icons li {
+    display: inline-block;
+    padding: 0px 10px;
+}
+
+ul.social-icons li a {
+    color: #fff7;
+}
+
+ul.social-icons li a:hover {
+    color: #fff;
+    transition: all .3s ease-in;
+}
 
 /* End Footer */
+
+
+/* Scrolling Options  */
