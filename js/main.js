@@ -8,10 +8,24 @@ jQuery(document).ready(function ($) {
         var e = $(this);
         if (e.children("ul").length > 0) {
             e.addClass("has-submenu");
-            $(this).append('<i class="fa fa-angle-down"></i>');
+            var location = $(this).children("a");
+            $(location).append('<i class="fa fa-angle-down"></i>');
         }
     });
     
+    
+    // Activating Sticky navbar on Scroll 
+    jQuery(window).scroll(function () {
+        var height = jQuery(window).scrollTop();
+
+        if (height > 30) {
+            jQuery('.header-wrapper').addClass('active');
+        }
+
+        if (height < 30) {
+            jQuery('.header-wrapper').removeClass('active');
+        }
+    });
     
     // Parnter Logo Carousel 
     $('.logo-carousel').owlCarousel({
@@ -22,11 +36,18 @@ jQuery(document).ready(function ($) {
             0: {
                 items: 1
             },
+            300:{
+                items:1,
+            },
+            400:{
+                items:2,
+            },
             600: {
-                items: 3
+                items: 5
             },
             1000: {
-                items: 5
+                items: 5,
+                nav:false,
             }
         }
     })
