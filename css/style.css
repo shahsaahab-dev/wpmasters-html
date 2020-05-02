@@ -400,6 +400,7 @@ button.mobile-menu {
   border: 1px solid #222;
   border-radius: 100%;
   display: none;
+  padding: 5px 10px;
 }
 
 /* For Small Screens max width 400px */
@@ -484,6 +485,7 @@ button.mobile-menu {
   .header-wrapper.active {
     padding: 20px 0px;
   }
+
   .footer-wrapper .col-lg-2 {
     width: 50%;
   }
@@ -507,4 +509,68 @@ button.mobile-menu {
   .logo-carousel .image {
     margin: 0 auto;
   }
+}
+
+/* Mobile Menu */
+.mobile-side-menu-wrapper {
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  right: -65%;
+  background: #fff;
+  width: 65%;
+  height: 100vh;
+  transition: all 0.2s ease-in;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.activate-menu {
+  right: -2px !important;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s ease-in;
+}
+
+.activate-menu::after {
+  content: "";
+  background: #22222285;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  right: 100%;
+  z-index: 222;
+  top: 0;
+}
+
+button.close-menu {
+  position: absolute;
+  z-index: 999;
+  right: 100%;
+  top: 50%;
+  padding: 20px 25px;
+  background: none;
+  border: 1px solid #fff;
+  color: #fff;
+  border-radius: 100%;
+  margin-right: 15px;
+}
+
+button.close-menu:hover {
+  background: #fff;
+  color: #222;
+  transition: all 0.3s ease-in;
+}
+
+ul.mobile-menu {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  font-size: 14px;
+}
+
+ul.mobile-menu li {
+  display: block;
+  border: 1px solid #d9d9d9;
+  padding: 10px 20px;
 }

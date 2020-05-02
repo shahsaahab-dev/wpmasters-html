@@ -52,6 +52,18 @@ jQuery(document).ready(function ($) {
         }
     })
 
-
+    
+    // Activate Mobile Menu 
+    $(".mobile-menu").on("click",function(event){
+        var sM = $(".mobile-side-menu-wrapper");
+        $(sM).addClass("activate-menu");
+        event.stopPropagation();
+    });
+    
+    // Close Mobile Menu
+    $(".close-menu").on("click",function(){
+        var sM = $(".mobile-side-menu-wrapper");
+        $(sM).removeClass("activate-menu");
+    })
 
 });
