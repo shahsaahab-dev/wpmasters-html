@@ -388,6 +388,24 @@ ul.social-icons li a:hover {
   box-shadow: 5px 5px 10px #2226;
 }
 
+button.owl-prev {
+  background: #222 !important;
+  color: #fff !important;
+  border-radius: 100%;
+  min-width: 40px;
+  min-height: 40px;
+  font-size: 25px !important;
+}
+
+button.owl-next {
+  background: #222 !important;
+  color: #fff !important;
+  border-radius: 100%;
+  min-width: 40px;
+  min-height: 40px;
+  font-size: 25px !important;
+  margin-left: 10px;
+}
 /* 
 Media Queries
 */
@@ -403,7 +421,72 @@ button.mobile-menu {
   padding: 5px 10px;
 }
 
-/* For Small Screens max width 400px */
+/* For REsponsive Screens */
+@media screen and (min-width: 992px) and (max-width: 1024px) {
+  .homepage-hero .col-md-12 {
+    max-width: 50% !important;
+  }
+
+  .left-content h3 {
+    font-size: 42px;
+  }
+
+  .left-content p {
+    font-size: 16px;
+  }
+
+  .image {
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 992px) {
+  ul.header-menu {
+    display: none;
+  }
+
+  .hero-bg {
+    text-align: center;
+  }
+
+  .hero-form-wrapper {
+    float: none;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+
+  .header-wrapper {
+    padding: 20px 0px;
+    margin: 0px;
+    position: relative;
+  }
+
+  ul.social-icons {
+    float: none;
+    text-align: center;
+  }
+
+  .top-border p {
+    text-align: center;
+  }
+
+  .image {
+    margin: 0 auto;
+  }
+
+  .footer-wrapper h4 {
+    margin-top: 20px;
+  }
+
+  .footer-wrapper {
+    padding: 20px 0px 0px;
+  }
+
+  button.mobile-menu {
+    display: block;
+    top: 20px;
+  }
+}
+
 @media screen and (max-width: 500px) {
   .topbar-wrapper {
     text-align: center;
@@ -416,6 +499,7 @@ button.mobile-menu {
 
   button.mobile-menu {
     display: block;
+    top: 20px;
   }
 
   .header-wrapper {
@@ -463,25 +547,6 @@ button.mobile-menu {
     margin-bottom: 20px;
   }
 
-  button.owl-prev {
-    background: #222 !important;
-    color: #fff !important;
-    border-radius: 100%;
-    min-width: 40px;
-    min-height: 40px;
-    font-size: 25px !important;
-  }
-
-  button.owl-next {
-    background: #222 !important;
-    color: #fff !important;
-    border-radius: 100%;
-    min-width: 40px;
-    min-height: 40px;
-    font-size: 25px !important;
-    margin-left: 10px;
-  }
-
   .header-wrapper.active {
     padding: 20px 0px;
   }
@@ -508,6 +573,15 @@ button.mobile-menu {
 
   .logo-carousel .image {
     margin: 0 auto;
+  }
+
+  ul.social-icons {
+    float: none;
+    text-align: center;
+  }
+
+  .top-border p {
+    text-align: center;
   }
 }
 

@@ -43,7 +43,7 @@ jQuery(document).ready(function ($) {
                 items:2,
             },
             600: {
-                items: 5
+                items: 3
             },
             1000: {
                 items: 5,
