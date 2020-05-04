@@ -65,5 +65,31 @@ jQuery(document).ready(function ($) {
         var sM = $(".mobile-side-menu-wrapper");
         $(sM).removeClass("activate-menu");
     })
+    
+    
+    // Submenu System activated on mobile menu 
+    $(".mobile-menu li").each(function () {
+        var e = $(this);
+        if (e.children("ul").length > 0) {
+            e.addClass("has-mobile-submenu");
+            var location = $(this);
+            $(location).append('<button class="show-mobile-submenu">+</button>');
+        }
+    });
+    
+    
+    var mobileSub = $(".mobile-mega-menu");
+    $(".show-mobile-submenu").on("click", function () {
+        $(mobileSub).toggleClass("visible");
+        // Changing Icon of Button to -
+        if (mobileSub.hasClass("visible")) {
+            $(this).html("-");
+        }
+        else{
+            $(this).html("+");
+        }
+    })
+    
+    
 
 });
